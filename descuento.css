@@ -1,0 +1,56 @@
+/*estilo para el cuerpo de la pagina*/
+body {
+    background-color: rgba(78, 74, 102, 0.904);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    margin: 0;
+}
+/*estilo para el contenedor del formulario*/
+.form-container {
+    background-color: #f7f1f1;
+    padding:40px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 0 10px rgb(255, 230, 230);
+    display: block; 
+    clear: both;
+}
+/*estilo para el encabezado del contenedor */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*estilo para las etiquetas utilizadas en el contenedor */
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/*estilo para los input utilizados en el formulario*/
+.form-container input[type="text"],
+.form-container input[type="number"] {
+    width: calc(100% - 20px);
+    padding:20px;
+    margin-bottom: 20px;
+    border: 2px solid #555;
+    border-radius: 10px;
+    background-color: #222;
+    color: white;
+}
+
+.form-container input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+/*estilo para cuando se ha dado clic en el botón */
+.form-container input[type="submit"]:hover {
+    background-color: #1b29ad;
+}

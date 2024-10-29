@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Salario en El Salvador</title>
+    <link rel="stylesheet" href="descuento.css">
+</head>
+<body>
+    <script src="descuento.js"></script>
+    <div id="caja1" class="form-container">
+        <h1>Cálculo de Salario en El Salvador</h1>
+        <h2>¿Quieres saber el descuento que le aplican a tu salario mensual?</h2>
+        <form name="fdatos" onsubmit="event.preventDefault(); calcular();">
+            <label for="empresa">Ingrese el nombre de la empresa a la cual labora:</label>
+            <input type="text" id="empresa" name="empresa" required>
+            
+            <label for="nombre">Ingrese su nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellido">Ingrese su apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+            
+            <label for="edad">Ingrese su edad:</label>
+            <input type="number" id="edad" name="edad" required min="0">
+            
+            <label for="salario">Ingrese su salario:</label>
+            <input type="number" id="salario" name="salario" required min="365">
+            
+            <p>¿Quieres saberlo Mensual o Quincenal?</p>
+            <input type="radio" id="mensual" name="periodo" value="Mensual" required>
+            <label for="mensual">Mensual</label>
+            <input type="radio" id="quincenal" name="periodo" value="Quincenal" required>
+            <label for="quincenal">Quincenal</label>
+            
+            <input type="submit" value="Calcular">
+        </form>
+        
+        <div id="resultado"></div>
+    </div>
+</body>
+</html>
+
+
+
+
+</body>
+</html>
